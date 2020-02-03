@@ -14,8 +14,10 @@ title_description: >
   the letters IoT and needs soldering.
 
 title_image: "https://secure.gravatar.com/avatar/026db6b54f988e00fd9f49ac7fb59707?s=500&d=mm"
-github_repository: https://github.com/jacobtomlinson/carte-noire
-addthis_id: ra-513c6fa83da6ec67
+google_analytics: "UA-157542757-1"
+disqus_account: thefipster
+github_repository: https://github.com/thefipster/Blog
+addthis_id: ra-5e37edd373c65640
 post_limit: 5
 
 # Social usernames/URLs
