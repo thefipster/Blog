@@ -116,7 +116,6 @@ ul {
 	position: fixed;
 	top: 10px;
 	left: 20px;
-	height: 88px;
 	cursor: pointer;
 	line-height: 1em;
 	padding: 10px;
@@ -127,9 +126,36 @@ ul {
 		left: 40px;
 	}
 
+	a {
+		color: white;
+	}
+
+	a:hover {
+		color: $light-medium;
+	}
+
+	a {
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		transition: 0.3s;
+	}
+
 	i {
 		display: block;
 		padding-bottom: 10px;
+	}
+
+	.fa-home {
+		font-size: 26px;
+	}
+
+	.fa-list {
+		font-size: 23px;
+	}
+
+	.fa-address-card {
+		font-size: 20px;
+		padding-bottom: 0;
 	}
 }
 
