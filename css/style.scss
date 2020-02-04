@@ -52,6 +52,9 @@ body {
 
   @media (max-width: $screen-sm-min) {
   	padding-bottom: 50px;
+  }  
+  @media (min-width: $screen-sm-min) {
+  	padding-top: 50px;
   }
 }
 
@@ -123,17 +126,18 @@ ul {
   padding: 10px;
   background-color: $dark;
   z-index: 100;
+  width: 100%;
 
   // large screen
   @media (min-width: $screen-sm-min) {
-    top: 20px;
-    left: 40px;
+    top: 0;
+    left: 0;
+    text-align: center;
   }
   // small screen
   @media (max-width: $screen-sm-min) {
     bottom: 0;
     left: 0;
-    width: 100%;
     text-align: center;
   }
 
@@ -152,16 +156,8 @@ ul {
   }
 
   i {
-    // large screen
-    @media (min-width: $screen-sm-min) {
-      display: block;
-      padding-bottom: 10px;
-    }
-    // small screen
-    @media (max-width: $screen-sm-min) {
-      padding-bottom: 0;
-	    width: 100px;
-	}
+    display: inline-block;
+    width: 20%;
   }
 
   .fa-home {
