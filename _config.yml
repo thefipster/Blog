@@ -2,7 +2,7 @@
 title: "the Fipster"
 email: felix.reisch@live.de
 description: "Personal blog of Felix Reisch aka the Fipster."
-baseurl: ""
+baseurl: "https://www.thefipster.com"
 url: "https://github.com/thefipster/Blog"
 title_description: >
   Hi. I'm Felix a professional and passionate software engineer 
@@ -31,8 +31,14 @@ stackoverflow_link: https://stackexchange.com/users/6483903/felix
 xing_link: https://www.xing.com/profile/Felix_Reisch/
 
 # Footer
-footer_left: "Made with Ruby, Jekyll and <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/thefipster\">Felix Reisch</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/thefipster/Blog\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: > 
+  Made with 
+  <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, 
+  <a href="https://github.com/jacobtomlinson/carte-noire" target="_blank">Carte Noire</a> 
+  and <i class="fa fa-heart"></i>
+
+footer_right: >
+  Hosted on <a href="https://github.com/thefipster/thefipster.github.io" target="_blank">Github</a>
 
 # Build settings
 markdown: kramdown
