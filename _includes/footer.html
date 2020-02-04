@@ -14,39 +14,6 @@
 
 {% if page.make-smaller-titles %}
 <script type="text/javascript">
-
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5;
-  var navbarHeight = $('.menu-button').outerHeight();
-
-  function startScrollDetection() {
-    setInterval(function () {
-      if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-      }
-    }, 250);
-  }
-
-  function hasScrolled() {
-    var st = $(this).scrollTop();
-    if (Math.abs(lastScrollTop - st) <= delta)
-      return;
-
-    if (st > lastScrollTop && st > navbarHeight) {
-      // Scroll Down
-      $('.menu-button').addClass('nav-up');
-    } else {
-      // Scroll Up
-      if (st + $(window).height() < $(document).height()) {
-        $('.menu-button').removeClass('nav-up');
-      }
-    }
-
-    lastScrollTop = st;
-  }
-
   function setFontSize() {
 
     var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
@@ -83,16 +50,49 @@
     } catch (e) { }
   }
 
-  $(document).ready(function () {
-    getStartFontSize();
-    startScrollDetection();
-  });
-  $(window).scroll(function (event) {
-    didScroll = true;
-  });
+  $(document).ready(getStartFontSize);
 
 </script>
 {% endif %}
+
+<script>
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('.menu-button').outerHeight();
+
+  function startScrollDetection() {
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+  }
+
+  function hasScrolled() {
+    var st = $(this).scrollTop();
+    if (Math.abs(lastScrollTop - st) <= delta)
+      return;
+
+    if (st > lastScrollTop && st > navbarHeight) {
+      // Scroll Down
+      $('.menu-button').addClass('nav-up');
+    } else {
+      // Scroll Up
+      if (st + $(window).height() < $(document).height()) {
+        $('.menu-button').removeClass('nav-up');
+      }
+    }
+
+    lastScrollTop = st;
+  }
+
+  $(document).ready(startScrollDetection);
+  $(window).scroll(function (event) {
+    didScroll = true;
+  });
+</script>
 
 {% if site.google_analytics %}
 <script type="text/javascript">
