@@ -51,10 +51,10 @@ body {
   width: 100%;
 
   @media (max-width: $screen-sm-min) {
-  	padding-bottom: 50px;
+  	padding-bottom: 46px;
   }  
   @media (min-width: $screen-sm-min) {
-  	padding-top: 50px;
+  	padding-top: 46px;
   }
 }
 
@@ -133,6 +133,9 @@ ul {
     top: 0;
     left: 0;
     text-align: center;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
   }
   // small screen
   @media (max-width: $screen-sm-min) {
@@ -147,12 +150,6 @@ ul {
 
   a:hover {
     color: $light-blue;
-  }
-
-  a {
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
   }
 
   i {
@@ -171,6 +168,12 @@ ul {
   .fa-address-card {
     font-size: 20px;
     padding-bottom: 0;
+  }
+}
+
+.nav-up {
+  @media (min-width: $screen-sm-min) {
+    top: -46px;
   }
 }
 
