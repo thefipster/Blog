@@ -13,38 +13,11 @@ layout: default
   <div class="row">
 
     <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
-      {% if site.data.thumbnail[page.thumbnail] %}
-      <div class="thumb">
-        <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}" />
-      </div>
-      {% elsif page.thumbnail %}
-      <div class="thumb">
-        <i class="fa fa-{{ page.thumbnail }} fa-4x"></i>
-      </div>
-      {% endif %}
-
-      <h1 class="header" itemprop="name">{{ page.title }}</h1>
-
-      <div class="author">
-        <small><i>
-          {% if page.author %}
-          by
-          <span itemprop="author">
-            {% if site.google_plus_link %}
-              <a rel="author" href="{{ site.google_plus_link }}">
-            {% endif %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">{{ page.author }}</span>
-            </span>
-            {% if site.google_plus_link %}
-              </a>
-            {% endif %}
-          </span>
-          {% endif %}
-          on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
-          {% if page.categories != empty %} under {% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
-        </i></small>
-      </div>
+      <h1>{{ site.title }}</h1>
+      <h2>
+        {{ page.title }}
+        <small>{{ page.date | date: "%B %-d, %Y" }}</small>
+      </h2>
 
       <div class="read-time">
         <small>
@@ -101,23 +74,6 @@ layout: default
         {% endif %}
 
       </div>
-
-      {% if site.twitter_username and site.disqus_account %}
-      <div class="content-panel feedback">
-        I <i class="fa fa-heart"></i> feedback.<br />
-        Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> or leave a comment below!
-      </div>
-      {% elsif site.twitter_username %}
-      <div class="content-panel feedback">
-        I <i class="fa fa-heart"></i> feedback.<br />
-        Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>!
-      </div>
-      {% elsif site.disqus_account %}
-      <div class="content-panel feedback">
-        I <i class="fa fa-heart"></i> feedback.<br />
-        Let me know what you think of this article in the comment section below!
-      </div>
-      {% endif %}
 
       {% if site.disqus_account %}
       <div class="content-panel comments">

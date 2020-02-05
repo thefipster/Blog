@@ -4,11 +4,12 @@ make-smaller-titles: true
 ---
 
 <div class="row index all-posts">
-
-  <h1 class="header author-header">{{ site.title }}</h1>
-  <h2 class="header" itemprop="headline">All posts</h2>
-  <h2 class="header categories" itemprop="headline"><small>grouped by
-
+  <h1>{{ site.title }}</h1>
+  
+  <h2>
+    All posts
+    <small>
+      grouped by
       <div class="dropdown btn-group">
         <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-toggle="dropdown">Years
           <span class="caret"></span>
@@ -17,8 +18,8 @@ make-smaller-titles: true
           <li><a href="{{ site.baseurl }}/posts-by-categories/">Categories</a></li>
         </ul>
       </div>
-
-    </small></h2>
+    </small>
+  </h2>
 
   {% for post in site.posts %}
   {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
@@ -26,7 +27,7 @@ make-smaller-titles: true
 
   {% if forloop.first %}
   <div class="col-md-12 content-panel articles">
-    <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
+    <h3 id="{{ this_year }}-ref">{{ this_year }}</h3>
     <ul>
       {% endif %}
 
@@ -42,7 +43,7 @@ make-smaller-titles: true
   </ul>
 </div>
 <div class="col-md-12 content-panel articles">
-  <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+  <h3 id="{{ next_year }}-ref">{{next_year}}</h3>
   <ul>
     {% endif %}
     {% endif %}

@@ -10,7 +10,7 @@ make-smaller-titles: true
                 <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150"
                     alt="{{ site.title }}" />
             </div>
-            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
+            <h1>{{ site.title }}</h1>
             <p class="author-text">
                 {{ site.title_description }}
             </p>
@@ -19,7 +19,7 @@ make-smaller-titles: true
 
         <div class="col-md-12 main content-panel">
             <div class="articles">
-                <h2>Latest Posts</h2>
+                <h3>Latest Posts</h2>
                 <ul>
                     {% for post in site.posts limit: site.post_limit %}
                     <li>
@@ -36,7 +36,7 @@ make-smaller-titles: true
 
         <div class="col-md-12 main content-panel">
             <div class="articles all-posts">
-                <h2>Search</h2>
+                <h3>Search</h3>
                 <input type="text" id="search-input" placeholder="Type here...">
                 <ul id="results-container"><small>Start typing to see some results</small></ul>
             </div>
