@@ -127,25 +127,24 @@ ul {
   background-color: $dark;
   z-index: 100;
   width: 100%;
+  text-align: center;
+  left: 0;
 
-  // large screen
   @media (min-width: $screen-sm-min) {
     top: 0;
-    left: 0;
-    text-align: center;
     -webkit-transition: top 0.3s ease-in-out;
     -moz-transition: top 0.3s ease-in-out;
     transition: top 0.3s ease-in-out;
   }
-  // small screen
   @media (max-width: $screen-sm-min) {
     bottom: 0;
-    left: 0;
-    text-align: center;
   }
 
   a {
     color: white;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   a:hover {
@@ -155,6 +154,7 @@ ul {
   i {
     display: inline-block;
     width: 20%;
+    max-width: 100px;
   }
 
   .fa-home {
@@ -165,9 +165,10 @@ ul {
     font-size: 23px;
   }
 
-  .fa-address-card {
-    font-size: 20px;
-    padding-bottom: 0;
+  .legal-icon {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -2px; 
   }
 }
 
@@ -203,49 +204,25 @@ ul {
   }
 
   .fa {
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
-  }
-
-  .fa-twitter:hover {
-    color: $twitter;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   .fa-linkedin:hover {
-    color: $linkedin;
+    color: $light-blue;
   }
 
   .fa-xing:hover {
-    color: $xing;
-  }
-
-  .fa-google-plus:hover {
-    color: $google-plus;
-  }
-
-  .fa-facebook:hover {
-    color: $facebook;
+    color: $light-blue;
   }
 
   .fa-github-alt:hover {
-    color: $github;
-  }
-
-  .fa-stack-overflow:hover {
-    color: $stack-overflow;
-  }
-
-  .fa-instagram:hover {
-    color: $instagram;
-  }
-
-  .fa-reddit-alien:hover {
-    color: $reddit;
+    color: $light-blue;
   }
 
   .fa-rss:hover {
-    color: $rss;
+    color: $light-blue;
   }
 }
 
@@ -833,19 +810,29 @@ ul {
   }
 
   @media (min-width: $screen-sm-min) {
-    width: 90%;
-    margin-left: 5%;
+    .left {
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
+  //   width: 90%;
+  //   margin-left: 5%;
   }
 
-  @media (min-width: $screen-md-min) {
-    width: 80%;
-    margin-left: 10%;
-  }
+  // @media (min-width: $screen-md-min) {
+  //   width: 80%;
+  //   margin-left: 10%;
 
-  @media (min-width: $screen-lg-min) {
-    width: 70%;
-    margin-left: 15%;
-  }
+  //   .right {
+  //     text-align: center;
+  //   }
+  // }
+
+  // @media (min-width: $screen-lg-min) {
+  //   width: 70%;
+  //   margin-left: 15%;
+  // }
 
   div {
     color: $light-medium;

@@ -2,7 +2,7 @@
 title: "the Fipster"
 email: felix.reisch@live.de
 description: "Personal blog of Felix Reisch aka the Fipster."
-baseurl: "https://www.thefipster.com"
+baseurl: #"https://www.thefipster.com"
 url: "https://github.com/thefipster/Blog"
 title_description: >
   Hi. I'm Felix a professional and passionate software engineer 
@@ -10,35 +10,34 @@ title_description: >
   My main objectives are writing SOLID software with C#.
   Beside that I also enjoy writing some Typescript, Ruby, Python, Elixir or Prolog. 
   Let's be honest, in the end it all boils down to allocations, conditions and loops...
-  In my spar(s)e time I like to play around with everything that contains 
-  the letters IoT and needs soldering.
+  In my spare time I like to play around with everything that contains 
+  the letters IoT and needs some soldering.
 
 title_image: "https://secure.gravatar.com/avatar/026db6b54f988e00fd9f49ac7fb59707?s=500&d=mm"
+post_limit: 5
+show_rss: false
 
 # Integrations
 google_analytics: "UA-157542757-1"
 disqus_account: thefipster
 github_repository: https://github.com/thefipster/Blog
 addthis_id: ra-5e37edd373c65640
-post_limit: 5
 
 # Social usernames/URLs
-twitter_username: thefipster
 github_username:  thefipster
-instagram_username: thefipster
 linkedin_link: https://de.linkedin.com/in/felix-reisch-a5a334116
-stackoverflow_link: https://stackexchange.com/users/6483903/felix
 xing_link: https://www.xing.com/profile/Felix_Reisch/
 
 # Footer
 footer_left: > 
   Made with 
   <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, 
-  <a href="https://github.com/jacobtomlinson/carte-noire" target="_blank">Carte Noire</a> 
+  <a href="https://github.com/jacobtomlinson/carte-noire" target="_blank" rel="noopener">Carte Noire</a> 
   and <i class="fa fa-heart"></i>
 
 footer_right: >
-  Hosted on <a href="https://github.com/thefipster/thefipster.github.io" target="_blank">Github</a>
+  Proudly hosted on 
+  <a href="https://github.com/thefipster/thefipster.github.io" target="_blank" rel="noopener">Github</a>
 
 # Build settings
 markdown: kramdown
