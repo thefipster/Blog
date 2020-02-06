@@ -320,16 +320,10 @@ ul {
         }
 
         small {
-          font-size: 14px;
+          font-size: 16px;
           margin-top: -10px;
           padding-top: 0px;
           color: $light-medium;
-        }
-      }
-
-      li:nth-last-of-type(1) {
-        small {
-          font-size: 16px;
         }
       }
     }
@@ -709,9 +703,6 @@ ul {
         color: $red;
       }
     }
-
-    .comments {
-    }
   }
 }
 
@@ -820,23 +811,7 @@ ul {
     .right {
       text-align: right;
     }
-  //   width: 90%;
-  //   margin-left: 5%;
   }
-
-  // @media (min-width: $screen-md-min) {
-  //   width: 80%;
-  //   margin-left: 10%;
-
-  //   .right {
-  //     text-align: center;
-  //   }
-  // }
-
-  // @media (min-width: $screen-lg-min) {
-  //   width: 70%;
-  //   margin-left: 15%;
-  // }
 
   div {
     color: $light-medium;
@@ -869,14 +844,14 @@ ul {
 
 .dropdown-menu {
   background-color: $light-blue;
-  color: $white;
-  > li > a {
-    background-color: $light-blue;
+  text-align: center;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+
+  a {
     color: $white;
-    &:hover {
-      background-color: $dark-blue;
-      color: $white;
-    }
   }
 }
 

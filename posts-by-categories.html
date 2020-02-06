@@ -3,22 +3,25 @@ layout: default
 make-smaller-titles: true
 ---
 
-<div class="row index all-posts">
-  <h1>{{ site.author_name }}</h1>
+<h1>{{ site.title }}</h1>
 
-  <h2>All posts
-    <small>
-      grouped by
-      <div class="dropdown btn-group">
-        <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-toggle="dropdown">Categories
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="{{ site.baseurl }}/posts/">Years</a></li>
-        </ul>
-      </div>
-    </small>
-  </h2>
+<h2>
+  All posts
+  <small>
+    grouped by
+    <div class="dropdown btn-group">
+      <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-toggle="dropdown">Categories
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="{{ site.baseurl }}/posts/">Years</a></li>
+      </ul>
+    </div>
+  </small>
+</h2>
+
+<div class="row index all-posts">
+
 
   {% for category in site.categories %}
 
