@@ -1,5 +1,6 @@
 ---
 layout:     post
+published:  true
 title:      K.I.T.T. get me out of here
 date:       2016-06-08 12:00:00
 summary:    Paper for Windows Developer featuring a Microsoft Band and Raspberry Pi communicating via an Azure IoT Hub.

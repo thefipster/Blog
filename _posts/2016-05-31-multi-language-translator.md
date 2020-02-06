@@ -1,5 +1,6 @@
 ---
 layout:     post
+published:  true
 title:      Multi Language Translator
 date:       2016-05-31 12:00:00
 summary:    Web application that can convert text into multiple languages at once.
