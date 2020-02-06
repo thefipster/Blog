@@ -15,7 +15,7 @@ tags:
 
 At last, I finished writing some papers and got some time again. But I didn’t want to spend it right back at the computer (okay to be honest I did, but not completely ;)) and so I tought: Hmm, reviving one of my old hobbies sounds like a good idea: Timelapse photography. Since we all need to evolve I wanted to add something new and decided to do a hyperlapse. As a target, I choose the Thyssen-Krupp-Quartier located in Essen, Germany. It’s the “new” headquarter of a huge steel manufacturing company constructed a few years ago and looks pretty nice.
 
-<iframe class="youtube-embed" src="http://www.youtube.com/embed/3Wj-E-zSPEs" frameborder="0" allowfullscreen></iframe>
+<iframe class="youtube-embed" src="https://www.youtube.com/embed/3Wj-E-zSPEs" frameborder="0" allowfullscreen></iframe>
 
 Here are the variables of the painstaking 100 min process of capturing the images:
 
