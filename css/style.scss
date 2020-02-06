@@ -221,7 +221,7 @@ ul {
     }
   }
 
-  .fa {
+  .fa, .fab, .fas {
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
@@ -235,7 +235,7 @@ ul {
     color: $light-blue;
   }
 
-  .fa-github-alt:hover {
+  .fa-github:hover {
     color: $light-blue;
   }
 
