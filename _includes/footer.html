@@ -7,12 +7,6 @@
   </div>
 </div>
 
-<!-- <script src="{{ site.baseurl }}/assets/js/jquery-3.4.1.slim.min.js" type="text/javascript"></script>
-<script src="{{ site.baseurl }}/assets/js/popperjs-1.14.7.min.js" type="text/javascript"></script>
-<script src="{{ site.baseurl }}/assets/js/bootstrap-4.3.1.min.js" type="text/javascript"></script>
-<script src="{{ site.baseurl }}/assets/js/highlightjs-9.18.1.min.js" type="text/javascript"></script> -->
-
-
 <script src="{{ site.baseurl }}/assets/js/bundle.js" type="text/javascript"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
@@ -22,16 +16,12 @@
 
 <script type="text/javascript">
   function setFontSize() {
-
     var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
-
     listOfArticlesDiv = document.getElementsByClassName("articles");
 
     for (i = 0; i < listOfArticlesDiv.length; i++) {
-
       listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
       listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
-
       divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
 
       for (k = 0; k < listOfSmall.length; k++) {
@@ -44,7 +34,6 @@
 
         while (title.width() + dateOfTitle.width() >= divWidth)
           title.css("font-size", fontSizeOfTitle -= 0.5);
-
       }
     }
   }
@@ -82,10 +71,8 @@
       return;
 
     if (st > lastScrollTop && st > navbarHeight) {
-      // Scroll Down
       $('.menu-button').addClass('nav-up');
     } else {
-      // Scroll Up
       if (st + $(window).height() < $(document).height()) {
         $('.menu-button').removeClass('nav-up');
       }
