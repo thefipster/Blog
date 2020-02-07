@@ -1,0 +1,20 @@
+.btn-categories {
+    background-color: $light-blue;
+    border-color: $light-blue;
+    color: $white;
+    &:hover {
+      background-color: $dark-blue;
+      border-color: $dark-blue;
+      color: $white;
+    }
+    &:active {
+      background-color: $dark-blue;
+      border-color: $dark-blue;
+      color: $white;
+    }
+    &:focus {
+      background-color: $dark-blue;
+      border-color: $dark-blue;
+      color: $white;
+    }
+  }

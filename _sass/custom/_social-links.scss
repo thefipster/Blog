@@ -1,0 +1,36 @@
+.links {
+    margin-top: 25px;
+    text-align: center;
+  
+    i {
+      padding-left: 5px;
+      padding-right: 5px;
+  
+      @media (min-width: $screen-sm-min) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  
+    .fa, .fab, .fas, .far {
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
+  
+    .fa-linkedin-in:hover {
+      color: $light-blue;
+    }
+  
+    .fa-xing:hover {
+      color: $light-blue;
+    }
+  
+    .fa-github:hover {
+      color: $light-blue;
+    }
+  
+    .fa-rss:hover {
+      color: $light-blue;
+    }
+  }

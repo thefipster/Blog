@@ -20,7 +20,9 @@ So translators were used, but all those services like Google or Bing only suppor
 
 To make the whole thing easier I spend two evenings bodging together an ASP.NET website consuming a translation service. At that point I can just fire many parallel translation requests and show the results. Now you can translate into many languages at once.
 
-[![Website Screenshot](/assets/img/webapp_multi_language_translator.png)](/assets/img/webapp_multi_language_translator.png)
+<div class="image-box">
+    <img src="/assets/img/webapp_multi_language_translator.png" alt="Website Screenshot" />
+</div>
 
 ~~If you want to take a look and try it out, the URL is http://translator.reisch.it~~
 __Sorry but the web app is no longer available.__

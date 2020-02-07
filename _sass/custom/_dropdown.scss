@@ -1,0 +1,12 @@
+.dropdown-menu {
+    background-color: $light-blue;
+    text-align: center;
+  
+    &:hover {
+      background-color: $dark-blue;
+    }
+  
+    a {
+      color: $white;
+    }
+  }

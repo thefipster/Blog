@@ -74,7 +74,9 @@ This allows your content to have the proper informational and contextual hierarc
 
 ### Images look great, too
 
-![Thumper](https://i.imgur.com/DMCHDqF.jpg)
+<div class="image-box">
+    <img src="https://i.imgur.com/DMCHDqF.jpg" alt="Thumper" />
+</div>
 
 ### Stylish blockquotes included
 
