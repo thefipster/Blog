@@ -1,9 +1,14 @@
 # Site settings
 title: the Fipster
-tagline: Yet another software developer blog from Felix Reisch aka the Fipster that's not solely about software, but mostly ;).
 title_addon: Personal developer blog of Felix Reisch.
-#baseurl: "https://www.thefipster.com"
-url: "https://www.thefipster.com"
+
+tagline: >
+  Hi. I'm Felix a professional and passionate software engineer 
+  located in North-Rhine-Westphalia, Germany. 
+  My main objectives are writing SOLID software using mostly C#.
+  Beside that I also enjoy writing some Typescript, Ruby, Python, Elixir or Prolog. 
+  Let's be honest, in the end it all boils down to allocations, conditions and loops.
+
 description: >
   Hi. I'm Felix a professional and passionate software engineer 
   located in North-Rhine-Westphalia, Germany. 
@@ -13,6 +18,7 @@ description: >
   In my spare time I like to play around with everything that contains 
   the letters IoT and needs some soldering.
 
+url: "https://www.thefipster.com"
 title_image: "https://secure.gravatar.com/avatar/026db6b54f988e00fd9f49ac7fb59707?s=500&d=mm"
 post_limit: 5
 show_rss: false
