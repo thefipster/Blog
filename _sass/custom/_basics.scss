@@ -25,13 +25,23 @@ html {
     text-align: center;
     margin-top: 20px;
     font-weight: 100;
+
+    small::before {
+      content: "\A";
+      white-space: pre;
+    }
+  
+    small {
+      font-size: 16px;
+      color: $light-medium
+    }
   }
   
   h2 {
     display: block;
     text-align: center;
     margin-top: 20px;
-  
+
     small::before {
       content: "\A";
       white-space: pre;
