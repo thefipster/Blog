@@ -2,7 +2,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{{ site.description }}">
 
 <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/assets/css/main.css" />
 
@@ -17,5 +16,5 @@
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-{% seo %}
+{% seo title=false %}
 </head>
