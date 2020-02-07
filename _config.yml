@@ -1,10 +1,10 @@
 # Site settings
-title: "the Fipster - A personal blog of Felix Reisch"
-email: felix.reisch@live.de
-description: "Personal blog of Felix Reisch aka the Fipster."
+title: the Fipster
+tagline: Yet another software developer blog from Felix Reisch aka the Fipster that's not solely about software, but mostly ;).
+title_addon: Personal developer blog of Felix Reisch.
 #baseurl: "http://localhost:4000"
 url: "https://www.thefipster.com"
-title_description: >
+description: >
   Hi. I'm Felix a professional and passionate software engineer 
   located in North-Rhine-Westphalia, Germany. 
   My main objectives are writing SOLID software using mostly C#.
@@ -24,6 +24,7 @@ show_tags: false
 # addthis_id: ra-5e37edd373c65640
 
 # Social usernames/URLs
+email: felix.reisch@live.de
 github_username:  thefipster
 linkedin_link: https://de.linkedin.com/in/felix-reisch-a5a334116
 xing_link: https://www.xing.com/profile/Felix_Reisch/
@@ -40,15 +41,6 @@ footer_right: >
   <a href="https://github.com/thefipster/thefipster.github.io" target="_blank" rel="noopener">Github</a>
 
 # SEO
-tagline: Yet another software developer blog from Felix Reisch that's not solely about software, but mostly ;).
-description: >  
-  Hi. I'm Felix a professional and passionate software engineer 
-  located in North-Rhine-Westphalia, Germany. 
-  My main objectives are writing SOLID software using mostly C#.
-  Beside that I also enjoy writing some Typescript, Ruby, Python, Elixir or Prolog. 
-  Let's be honest, in the end it all boils down to allocations, conditions and loops.
-  In my spare time I like to play around with everything that contains 
-  the letters IoT and needs some soldering.
 author:
   twitter: thefipster
 twitter:
@@ -65,6 +57,11 @@ social:
 #  yandex: 1234
 #  baidu: 1234
 lang: en_US
+keywords: 
+  - Felix
+  - Reisch
+  - Fipster
+  - software
 
 # Build settings
 markdown: kramdown
