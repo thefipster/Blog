@@ -27,7 +27,9 @@ tags:
 
 In one of my earlier posts I mentioned that I was working on some papers… well the first one was just released in the Windows Developer magazine with the title “K.I.T.T. hol mich hier raus” (K.I.T.T. get me out of here) and featured how to connect a Microsoft Band with a Raspberry Pi via a Microsoft Azure IoT Hub. It even made it into the highlight section on the cover page – YES!
 
-[![Windows Developer Cover](/assets/img/cover_windows_developer_kitt_get_me_out_of_here.jpg)](/assets/img/cover_windows_developer_kitt_get_me_out_of_here.jpg)
+<div class="image-box">
+    <img src="/assets/img/cover_windows_developer_kitt_get_me_out_of_here.jpg" alt="Windows Developer Cover" />
+</div>
 
 If you like a quick peek into the article head over to the [Windows Developer page][1] and take a look.
 
