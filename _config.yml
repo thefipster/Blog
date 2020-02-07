@@ -39,6 +39,33 @@ footer_right: >
   Proudly hosted on 
   <a href="https://github.com/thefipster/thefipster.github.io" target="_blank" rel="noopener">Github</a>
 
+# SEO
+tagline: Yet another software developer blog from Felix Reisch that's not solely about software, but mostly ;).
+description: >  
+  Hi. I'm Felix a professional and passionate software engineer 
+  located in North-Rhine-Westphalia, Germany. 
+  My main objectives are writing SOLID software using mostly C#.
+  Beside that I also enjoy writing some Typescript, Ruby, Python, Elixir or Prolog. 
+  Let's be honest, in the end it all boils down to allocations, conditions and loops.
+  In my spare time I like to play around with everything that contains 
+  the letters IoT and needs some soldering.
+author:
+  twitter: thefipster
+twitter:
+  username: thefipster
+logo: https://www.thefipster.com/favicons/apple-touch-icon.png
+social:
+  name: Felix Reisch
+  links:
+    - https://twitter.com/thefipster
+#webmaster_verifications:
+#  google: 1234
+#  bing: 1234
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
+lang: en_US
+
 # Build settings
 markdown: kramdown
 
