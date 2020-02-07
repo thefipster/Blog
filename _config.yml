@@ -34,7 +34,7 @@ footer_left: >
   Made with 
   <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, 
   <a href="https://github.com/jacobtomlinson/carte-noire" target="_blank" rel="noopener">Carte Noire</a> 
-  and <i class="fa fa-heart" title="love" aria-label="love"></i>
+  and <i class="icon-heart"></i>
 
 footer_right: >
   Proudly hosted on 
