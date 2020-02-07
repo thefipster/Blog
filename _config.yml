@@ -2,7 +2,7 @@
 title: the Fipster
 tagline: Yet another software developer blog from Felix Reisch aka the Fipster that's not solely about software, but mostly ;).
 title_addon: Personal developer blog of Felix Reisch.
-#baseurl: "http://localhost:4000"
+baseurl: "https://www.thefipster.com"
 url: "https://www.thefipster.com"
 description: >
   Hi. I'm Felix a professional and passionate software engineer 
