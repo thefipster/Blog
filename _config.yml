@@ -20,7 +20,7 @@ show_tags: false
 
 # Integrations
 github_repository: https://github.com/thefipster/Blog
-google_analytics: "UA-157542757-1"
+# google_analytics: "UA-157542757-1"
 # disqus_account: thefipster
 # addthis_id: ra-5e37edd373c65640
 
