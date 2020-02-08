@@ -1,0 +1,13 @@
+{% assign image = site.data.images[include.slug][include.image] %}
+
+<div class="image-box">
+    {% if image.external %}
+    <a href="{{ image.src }}">
+        <img src="{{ image.src }}" alt="{{ image.alt }}" />
+    </a>
+    {% else %}
+    <a href="/assets/img/{{ include.slug }}/{{ image.src }}">
+        <img src="/assets/img/{{ include.slug }}/{{ image.src }}" alt="{{ image.alt }}" />
+    </a>
+    {% endif %}
+</div>

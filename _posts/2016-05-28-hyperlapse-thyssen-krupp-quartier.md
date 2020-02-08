@@ -2,6 +2,7 @@
 layout:     post
 published:  true
 title:      Thyssen-Krupp-Quartier Hyperlapse
+slug:       thyssen_quartier_hyperlapse
 date:       2016-05-28 12:00:00
 summary:    Hyperlapse video of the Thyssen Kurpp Quartier in Essen, Germany.
 categories: photography
