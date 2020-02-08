@@ -11,6 +11,14 @@
   
     .author-row {
       margin-top: 50px;
+
+      h2 {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        color: $light-blue;
+        font-size: 26px;
+      }
     }
   
     .row {
