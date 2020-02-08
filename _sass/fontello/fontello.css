@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?60345002#fontello') format('svg');
+    src: url('../font/fontello.svg?79939812#fontello') format('svg');
   }
 }
 */
@@ -55,12 +55,13 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-book:before { content: '\e800'; } 
-.icon-heart:before { content: '\e801'; } 
-.icon-twitter:before { content: '\f099'; } 
-.icon-github:before { content: '\f09b'; } 
-.icon-linkedin:before { content: '\f0e1'; }
-.icon-xing:before { content: '\f168'; }
-.icon-scale:before { content: '\f24e'; } 
-.icon-gitlab:before { content: '\f296'; }
-.icon-id:before { content: '\f2c3'; }
+.icon-book:before { content: '\e800'; } /* '' */
+.icon-heart:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-github:before { content: '\f09b'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-xing:before { content: '\f168'; } /* '' */
+.icon-stackoverflow:before { content: '\f16c'; } /* '' */
+.icon-scale:before { content: '\f24e'; } /* '' */
+.icon-gitlab:before { content: '\f296'; } /* '' */
+.icon-id:before { content: '\f2bc'; } /* '' */
