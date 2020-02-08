@@ -24,6 +24,9 @@ post_limit: 5
 show_rss: false
 show_tags: false
 
+collections:
+  - images
+
 # Integrations
 # google_analytics: "UA-157542757-1"
 # disqus_account: thefipster

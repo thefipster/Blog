@@ -2,6 +2,7 @@
 layout:     post
 published:  true
 title:      Carte Noire in Action
+slug:       carte_noire_features
 date:       2014-06-10 12:31:19
 summary:    See what the different elements looks like.
 categories: jekyll
@@ -57,7 +58,19 @@ end
 
 They're responsive, and well-proportioned (in `padding`, `line-height`, `margin`, and `font-size`).
 
-##### They draw the perfect amount of attention
+# Heading 1
+
+This thing above as a header with a single hashtag
+
+## Heading 2
+
+and this one has two hashtags
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
 
 This allows your content to have the proper informational and contextual hierarchy. Yay.
 
@@ -74,9 +87,7 @@ This allows your content to have the proper informational and contextual hierarc
 
 ### Images look great, too
 
-<div class="image-box">
-    <img src="https://i.imgur.com/DMCHDqF.jpg" alt="Thumper" />
-</div>
+{% include image.html slug=page.slug image="bunny" %}
 
 ### Stylish blockquotes included
 
