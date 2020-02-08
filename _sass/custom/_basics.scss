@@ -1,128 +1,127 @@
-
-
 /* Globals */
 html {
-    overflow-x: hidden;
-  }
-  
-  body {
-    font-weight: 300;
-    background-color: $dark;
-    color: $white;
-    font-size: 18px;
-    width: 100%;
-  
-    @media (max-width: $screen-sm-min) {
-        padding-bottom: 46px;
-    }  
-    @media (min-width: $screen-sm-min) {
-        padding-top: 46px;
-    }
-  }
-  
-  h1 {
-    color: $light-blue;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 100;
+  overflow-x: hidden;
+}
 
-    small::before {
-      content: "\A";
-      white-space: pre;
-    }
-  
-    small {
-      font-size: 16px;
-      color: $light-medium
-    }
-  }
-  
-  h2 {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
+body {
+  font-weight: 300;
+  background-color: $dark;
+  color: $white;
+  font-size: 18px;
+  width: 100%;
 
-    small::before {
-      content: "\A";
-      white-space: pre;
-    }
-  
-    small {
-      font-size: 16px;
-      color: $light-medium
-    }
-  }
-  
-  h3 {
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
-    color: $light-blue;
-    font-size: 26px;
+  @media (max-width: $screen-sm-min) {
+    padding-bottom: 46px;
   }
 
-  .emphasize {
-    color: $light-blue;
-    font-weight: 600;
+  @media (min-width: $screen-sm-min) {
+    padding-top: 46px;
   }
-  
-  a,
-  a:active {
-    color: $light-blue;
-    text-decoration: none;
+}
+
+h1 {
+  color: $light-blue;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 100;
+
+  small::before {
+    content: "\A";
+    white-space: pre;
   }
-  
-  a:hover {
-    color: $dark-blue;
-    text-decoration: none;
+
+  small {
+    font-size: 16px;
+    color: $light-medium
   }
-  
-  ul {
-    list-style-type: none;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+
+  small::before {
+    content: "\A";
+    white-space: pre;
   }
-  
-  .clearfix:after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
+
+  small {
+    font-size: 16px;
+    color: $light-medium
   }
-  
-  .content-panel {
-    background-color: $medium;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-    border-bottom: 5px solid $light-blue;
+}
+
+h3 {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  color: $light-blue;
+  font-size: 26px;
+}
+
+.emphasize {
+  color: $light-blue;
+  font-weight: 600;
+}
+
+a,
+a:active {
+  color: $light-blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $dark-blue;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.content-panel {
+  background-color: $medium;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid $light-blue;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid $darker;
+}
+
+th {
+  padding: 2px;
+  border: 2px solid $darker;
+}
+
+td {
+  padding: 2px;
+  border: 1px solid $dark-blue;
+}
+
+.legal {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  
-  table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 2px solid $darker;
-  }
-  
-  th {
-    padding: 2px;
-    border: 2px solid $darker;
-  }
-  
-  td {
-    padding: 2px;
-    border: 1px solid $dark-blue;
-  }
-  
-  .legal {
-    .content {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-  
-  p {
-    text-align: justify;
-  }
+}
+
+p {
+  text-align: justify;
+}
