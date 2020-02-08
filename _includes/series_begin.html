@@ -1,27 +1,29 @@
 {% if page.series %}
+<div class="content-panel">
 
-This post is part of the series '{{ page.series }}':
-<ol class="series">
+  This post is part of the series '{{ page.series }}':
+  <ol class="series">
 
-{% for apost in site.posts reversed %}
+    {% for apost in site.posts reversed %}
 
-  {% if page.series == apost.series %}
+    {% if page.series == apost.series %}
     <li>
       {% if page.title == apost.title %}
-        {% assign nextpost = true %}
-        {{ apost.title }}
+      {% assign nextpost = true %}
+      {{ apost.title }}
       {% else %}
-        {% if nextpost == true %}
-          {% assign seriesnext = apost %}
-        {% endif %}
-        {% assign nextpost = false %}
-        <a href="{{ apost.url }}">{{ apost.title }}</a>
+      {% if nextpost == true %}
+      {% assign seriesnext = apost %}
+      {% endif %}
+      {% assign nextpost = false %}
+      <a href="{{ apost.url }}">{{ apost.title }}</a>
       {% endif %}
     </li>
-  {% endif %}
+    {% endif %}
 
-{% endfor %}
+    {% endfor %}
 
-</ol>
+  </ol>
 
+</div>
 {% endif %}

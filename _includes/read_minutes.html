@@ -1,6 +1,12 @@
 {% if page.minutes %}
-  {% assign minutes = page.minutes %}
+{% assign minutes = page.minutes %}
 {% else %}
-  {% assign minutes = content | number_of_words | divided_by: 180 %}
-  {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
 {% endif %}
+
+<div class="read-time">
+  <small>
+    {{ minutes }} minute read
+  </small>
+</div>

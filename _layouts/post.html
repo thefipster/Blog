@@ -2,28 +2,27 @@
 layout: default
 ---
 
-{% include read_minutes.html %}
-
 <div class="single">
   <div class="row">
     <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
       <h1>
         {{ page.title }}
-        <small>{{ page.date | date: "%B %-d, %Y" }}</small>
+        <small>
+          {{ page.date | date: "%B %-d, %Y" }}
+        </small>
       </h1>
 
-      <div class="read-time">
-        <small>
-          {{ minutes }} minute read
-        </small>
+      {% include read_minutes.html %}
+      {% include series_begin.html %}
+
+      <div class="content-panel">
+        <span itemprop="articleBody">
+          {{ content }}
+        </span>
       </div>
 
-      <div class="content-panel content">
-        {% include series_begin.html %}
-        <span itemprop="articleBody">{{ content }}</span>
-        {% include series_end.html %}
-      </div>
+      {% include series_end.html %}
+
     </div>
   </div>
 </div>
-
