@@ -1,0 +1,8 @@
+{% if page.series %}
+
+{% if seriesnext %}
+  <i>Next post in the series:</i>
+  <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
+{% endif %}
+
+{% endif %}

@@ -20,31 +20,13 @@ description: >
 
 url: "https://www.thefipster.com"
 title_image: "https://secure.gravatar.com/avatar/026db6b54f988e00fd9f49ac7fb59707?s=500&d=mm"
-post_limit: 5
-show_rss: false
-show_tags: false
 
-# Integrations
-# google_analytics: "UA-157542757-1"
-# disqus_account: thefipster
-# addthis_id: ra-5e37edd373c65640
-
-# Social usernames/URLs
 email: felix.reisch@live.de
 github_username:  thefipster
 linkedin_link: https://de.linkedin.com/in/felix-reisch-a5a334116
 xing_link: https://www.xing.com/profile/Felix_Reisch/
 
-# Footer
-footer_left: > 
-  Made with 
-  <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, 
-  <a href="https://github.com/jacobtomlinson/carte-noire" target="_blank" rel="noopener">Carte Noire</a> 
-  and <i class="icon-heart"></i>
-
-footer_right: >
-  Proudly hosted on 
-  <a href="https://github.com/thefipster/thefipster.github.io" target="_blank" rel="noopener">Github</a>
+post_limit: 5
 
 # SEO
 author:
@@ -56,13 +38,6 @@ social:
   name: Felix Reisch
   links:
     - https://twitter.com/thefipster
-#webmaster_verifications:
-#  google: 1234
-#  bing: 1234
-#  alexa: 1234
-#  yandex: 1234
-#  baidu: 1234
-lang: en_US
 keywords: 
   - Felix
   - Reisch
