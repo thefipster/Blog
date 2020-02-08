@@ -1,6 +1,6 @@
 ---
 layout:     post
-published:  true
+published:  false
 title:      Carte Noire in Action
 slug:       carte_noire_features
 date:       2014-06-10 12:31:19
