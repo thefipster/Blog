@@ -11,6 +11,14 @@
     margin-left: 0%;
     padding: 0px;
 
+    h2 {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      color: $light-blue;
+      font-size: 26px;
+    }
+
     .read-time {
       font-size: 16px;
       text-align: center;
@@ -36,6 +44,7 @@
       margin-bottom: 30px;
       text-align: center;
 
+
       @media (min-width: $screen-sm-min) {
         margin-left: -30px;
         width: calc(100% + 60px);
@@ -53,7 +62,6 @@
 
     ol {
       list-style-type: decimal;
-      margin-bottom: 0;
     }
 
     blockquote {

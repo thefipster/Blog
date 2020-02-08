@@ -1,0 +1,12 @@
+default_page:
+    src: WebServer_GadgeterWebServer.png
+    alt: "Default Gadgeteer web server response."
+output:
+    src: WebServer_Output.png
+    alt: "Serial output of the Gadgeteer board."
+references:
+    src: WebServer_Reference.png
+    alt: "Assembly reference for the web server in visual studio."
+response:
+    src: WebServer_Response.png
+    alt: "Response to our http endpoint on the Gagdeteer board."
