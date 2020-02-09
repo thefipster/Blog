@@ -19,6 +19,15 @@
       font-size: 26px;
     }
 
+    h3 {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      color: $light-blue;
+      font-size: 26px;
+      font-weight: 200;
+    }
+
     .read-time {
       font-size: 16px;
       text-align: center;
@@ -27,28 +36,22 @@
     }
 
     .youtube-embed {
-      margin-left: -15px;
-      width: calc(100% + 30px);
+      width: calc(100% + 60px);
+      margin-left: -30px;
       height: 394px;
+      border: 0;
 
       @media (min-width: $screen-sm-min) {
-        width: calc(100% + 60px);
-        margin-left: -30px;
+        
       }
     }
 
     .image-box {
-      width: calc(100% + 30px);
+      margin-left: -30px;
+      width: calc(100% + 60px);
       max-height: 400px;
-      margin-left: -15px;
       margin-bottom: 30px;
       text-align: center;
-
-
-      @media (min-width: $screen-sm-min) {
-        margin-left: -30px;
-        width: calc(100% + 60px);
-      }
     }
 
     img {
@@ -67,20 +70,14 @@
     blockquote {
       position: relative;
       width: 100%;
-      margin-left: -15px;
-      padding-left: 30px;
-      padding-right: 30px;
+      margin-left: -30px;
+      padding-left: 45px;
+      padding-right: 15px;
       background-color: $darker;
       color: white;
       box-sizing: content-box;
       border: none;
       font-size: 28px;
-
-      @media (min-width: $screen-sm-min) {
-        margin-left: -30px;
-        padding-left: 45px;
-        padding-right: 15px;
-      }
 
       p {
         margin: 0;
@@ -107,13 +104,14 @@
     // code highlighting
     figure.highlight,
     div.highlighter-rouge {
-      width: 100%;
-      margin-left: -15px;
+      width: calc(100% + 30px);
+      margin-left: -30px;
       padding-right: 10px;
       box-sizing: content-box;
 
       @media (min-width: $screen-sm-min) {
-        margin-left: -30px;
+      width: 100%;
+      margin-left: -30px;
         padding-right: 60px;
       }
 

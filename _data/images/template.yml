@@ -1,0 +1,10 @@
+bunny:
+  src: https://i.imgur.com/DMCHDqF.jpg
+  alt: Thumper
+  external: true
+m104:
+  src: m104.jpg
+  alt: Messier 104 - Sombrero Galaxy
+earth-rise:
+  src: earth-rise.jpg
+  alt: Rising earth viewed from the moon.
