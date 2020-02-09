@@ -1,0 +1,10 @@
+output:
+    src: output.png
+    alt: EthRly16 test console output
+website:
+    src: website.png
+    alt: EthRly16 device website
+device:
+    src: device.jpg
+    alt: EthRly16 device
+        

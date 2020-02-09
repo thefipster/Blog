@@ -5,7 +5,7 @@ title:      Webserver using NETMF and Gadgeteer
 slug:       netmf-webserver
 date:       2013-12-13 12:00:00
 summary:    Implement a basic web server on a Gadgeteer micro controller using the .net micro framework.
-categories: mcu
+categories: software
 tags:
  - mcu
  - Gadgeteer
