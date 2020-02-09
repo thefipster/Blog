@@ -29,4 +29,4 @@ function setFontSize() {
     } catch (e) { }
   }
 
-  $(document).ready(getStartFontSize);
+  getStartFontSize();
