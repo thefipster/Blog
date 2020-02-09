@@ -14,7 +14,14 @@ layout: default
 
       {% include read_minutes.html %}
       {% include series_begin.html %}
-      {% include toc.html %}
+
+      {% if page.toc %}
+      <div class="content-panel toc">
+        <h2>Table of contents</h2>
+        {% include toc.html html=content %}
+      </div>
+      {% endif %}
+
 
       <div class="content-panel">
         <span itemprop="articleBody">
