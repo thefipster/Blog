@@ -1,7 +1,8 @@
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var navbarHeight = $('.menu-button').outerHeight();
+var menuElement = document.getElementsByClassName("menu-buttom")[0];
+var navbarHeight = getAbsoluteHeight(menuElement);
 
 function startScrollDetection() {
   setInterval(function () {
@@ -18,17 +19,27 @@ function hasScrolled() {
     return;
 
   if (st > lastScrollTop && st > navbarHeight) {
-    $('.menu-button').addClass('nav-up');
+    menuElement.classList.add("nav-up");
   } else {
-    if (st + $(window).height() < $(document).height()) {
-      $('.menu-button').removeClass('nav-up');
+    if (st + window.outerHeight < document.height) {
+      menuElement.classList.remove("nav-up");
     }
   }
 
   lastScrollTop = st;
 }
 
-$(document).ready(startScrollDetection);
-$(window).scroll(function (event) {
+function getAbsoluteHeight(el) {
+  el = (typeof el === 'string') ? document.querySelector(el) : el; 
+
+  var styles = window.getComputedStyle(el);
+  var margin = parseFloat(styles['marginTop']) +
+               parseFloat(styles['marginBottom']);
+
+  return Math.ceil(el.offsetHeight + margin);
+}
+
+startScrollDetection();
+window.addEventListener('scroll', function(e) {
   didScroll = true;
 });
