@@ -1,7 +1,7 @@
 {% assign atParts = include.email | split: '@' %}
 {% assign domParts = atParts.last | split: '.' %}
 
-<a href="mailto:{{ include.email | encode_email }}">
+<a href="mailto:%66%65%6C%69%78.%72%65%69%73%63%68@%6C%69%76%65.%64%65">
     <span class="obfuscate">
         {{ atParts.first }}<span>null</span>@<span>null</span>{{ domParts.first }}<span>null</span>.{{ domParts.last }}
     </span>

@@ -1,11 +1,13 @@
 ---
 layout:     post
 published:  true
+toc:        true
 title:      ELV IPWE .net lib
 slug:       ipwe-dotnet-lib
 date:       2014-04-24 12:00:00
-summary:    dotnet library to read the sensor values of an ELV IPWE 1 weather station.
 categories: software
+summary: >
+  dotnet library to read the sensor values of an ELV IPWE 1 weather station.
 tags:
  - elv
  - ipwe
