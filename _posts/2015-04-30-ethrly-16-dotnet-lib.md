@@ -1,11 +1,14 @@
 ---
 layout:     post
 published:  true
+toc:        true
 title:      Robot Electronics EthRly16 .net core lib
 slug:       ethrly-dotnet-core-lib
 date:       2015-04-30 12:00:00
-summary:    dotnet core library to control an EthRly 16 relay board from Robot Electronics.
 categories: software
+summary: >
+  dotnet core library to control an 
+  EthRly 16 relay board from Robot Electronics.
 tags:
  - dotnet
  - .net
@@ -70,6 +73,7 @@ course six bytes which represents the mac address.
 
 {% include image.html slug=page.slug image="website" %}
 
-Hopefully this will help someone and if you have questions leave a comment or send me an email or a tweet. See you with the next post.
+Hopefully this will help someone and if you have questions leave a comment or 
+send me an email or a tweet. See you with the next post.
 
 [1]: https://github.com/theorangecurtain/EthRly16/

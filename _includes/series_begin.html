@@ -1,7 +1,7 @@
 {% if page.series %}
 <div class="content-panel">
 
-  This post is part of the series '{{ page.series }}':
+  This post is part of the series <span class="emphasize">{{ page.series }}</span>
   <ol class="series">
 
     {% for apost in site.posts reversed %}
