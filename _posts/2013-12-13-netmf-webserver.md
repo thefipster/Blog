@@ -43,7 +43,7 @@ the FEZ Hydra board and it works even though GHI Electronics explicitly mention
 that it may harm the Hydra, in my case it worked as well as the Cerberus. But 
 don’t make responsible if you fry your Hydra board.
 
-## Firmware update
+### Firmware update
 
 To use the Cerberus with the ENC28 ethernet module you first need to flash a 
 new firmware to the board. The development packages of GHI Electronics contain 
@@ -52,7 +52,7 @@ packaged are also two firmwares for the Cerberus and the Hydra. One without
 Ethernet support and the other one includes it. I guess it’s obvious that you 
 have to flash the one including the Ethernet support.
 
-## Mandatory Connection
+### Mandatory Connection
 
 After that GHI Electronics states that it is mandatory to connect the ENC28 
 module at all time to the board if you want to avoid damaging it. I forgot it 
@@ -93,7 +93,9 @@ private string InitNetwork()
         Boolean isDhcpWorked = false;
  
         // dynamic IP address
-        if (networkInterface.IsDhcpEnabled == false) networkInterface.EnableDhcp();
+        if (networkInterface.IsDhcpEnabled == false) 
+            networkInterface.EnableDhcp();
+
         // Wait for DHCP (on LWIP devices)
         for (int i = 0; i &lt; 5; i++)
         {
@@ -113,7 +115,11 @@ private string InitNetwork()
             if (isDhcpWorked == false)
             {
                 // static IP address
-                networkInterface.EnableStaticIP("192.168.0.100", "255.255.255.0", "192.168.1.1");
+                networkInterface.EnableStaticIP(
+                    "192.168.0.100", 
+                    "255.255.255.0", 
+                    "192.168.1.1");
+
                 networkInterface.EnableStaticDns(new[] { "8.8.8.8" });
                 string h = "df";
                 Debug.Print("DHCP not enabled.");
@@ -139,3 +145,75 @@ private string InitNetwork()
 {% endhighlight %}
 
 {% include image.html slug=page.slug image="output" %}
+
+### Web Server
+
+After running the code on the board, the output window of Visual Studio will 
+show the above infos and the ethernet connection is ready. Next step is the 
+web server. For that you need a new reference in you Gadgeteer project. 
+Navigate to the Add Reference windows, scroll to the bottom and select the 
+Gadgeteer.WebServer library.
+
+{% include image.html slug=page.slug image="references" %}
+
+The important class inside the library is called WebServer and exposes two 
+methods which will help us setup the web server.
+
+1. StartLocalServer
+2. SetupWebEvent
+
+The first one StartLocalServer allows the initialization of the server. You 
+just pass the returned IP address from the network init method as a first 
+argument and the desired port as the second argument. That’s it. Done!
+
+Execute the project on your FEZ board, navigate to the IP and port in your 
+browser and voilá, your web server is up and running.
+
+{% highlight csharp %}
+WebServer.StartLocalServer(ipAddress, 80);
+{% endhighlight %}
+
+{% include image.html slug=page.slug image="default_page" %}
+
+### Web Events
+
+Finally, we’re done with setting things up and can start with the fun part, 
+registering WebEvents. This is done with the second of the above methods – 
+SetupWebEvent(). The constructors takes one string argument which will 
+determine the path of the URL. For example if we pass the argument “example” 
+into the constructor the resulting URL for this WebEvent will be 
+`http://IP:PORT/PATH`. Now you can subscribe to the WebEventReceived event of 
+the WebEvent object. The callback method now gets called every time when a 
+HTTP message arrives.
+
+{% highlight csharp %}
+WebEvent messageEvent = WebServer.SetupWebEvent("message");
+messageEvent.WebEventReceived += MessageEventOnWebEventReceived;
+{% endhighlight %}
+
+Within the callback method we can access the URL parameters and respond to the 
+sender of the message. The following code will show an example of how to do 
+exactly that.
+
+{% highlight csharp %}
+private void MessageEventOnWebEventReceived(
+    string path, 
+    WebServer.HttpMethod method, 
+    Responder responder) 
+{
+    string text = responder.UrlParameter['text'].ToString();
+    responder.Respond("Deine Nachricht " + text + " wurde empfangen.");
+}
+{% endhighlight %}
+
+If we now call the following URL in the browser: 
+`http://IP:PORT/message?text=Yeah`
+
+{% include image.html slug=page.slug image="response" %}
+
+We get this result. So far so good, now you know how to setup a REST like web 
+server on a GHI Electronics Gadgeteer board.
+
+On the same Codeshare page as mentioned in the beginning of this article you 
+can also find a JSON library to serialize and deserialize your data to send it 
+over the wire… unless you want to go full binary.
