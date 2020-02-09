@@ -1,0 +1,10 @@
+data:
+    src: data.png
+    alt: Return data of the lib when querying the sensors.
+website:
+    src: website.png
+    alt: IPWE 1 device website
+device:
+    src: device.jpg
+    alt: IPWE 1 device
+        

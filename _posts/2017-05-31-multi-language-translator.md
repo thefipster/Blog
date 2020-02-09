@@ -3,9 +3,9 @@ layout:     post
 published:  true
 title:      Multi Language Translator
 slug:       multi-lang-translator
-date:       2016-05-31 12:00:00
+date:       2017-05-31 12:00:00
 summary:    Web application that can convert text into multiple languages at once.
-categories: apps
+categories: software
 tags:
 - Google
 - Bing
