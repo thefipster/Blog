@@ -1,8 +1,8 @@
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var menuElement = document.getElementsByClassName("menu-buttom")[0];
-var navbarHeight = getAbsoluteHeight(menuElement);
+var menuElement = document.getElementsByClassName("menu-button")[0];
+var navbarHeight = getAbsoluteHeight();
 
 function startScrollDetection() {
   setInterval(function () {
@@ -14,14 +14,14 @@ function startScrollDetection() {
 }
 
 function hasScrolled() {
-  var st = $(this).scrollTop();
+  var st = window.scrollY;
   if (Math.abs(lastScrollTop - st) <= delta)
     return;
 
   if (st > lastScrollTop && st > navbarHeight) {
     menuElement.classList.add("nav-up");
   } else {
-    if (st + window.outerHeight < document.height) {
+    if (st < lastScrollTop) {
       menuElement.classList.remove("nav-up");
     }
   }
@@ -29,14 +29,12 @@ function hasScrolled() {
   lastScrollTop = st;
 }
 
-function getAbsoluteHeight(el) {
-  el = (typeof el === 'string') ? document.querySelector(el) : el; 
-
-  var styles = window.getComputedStyle(el);
+function getAbsoluteHeight() {
+  var styles = getComputedStyle(menuElement);
   var margin = parseFloat(styles['marginTop']) +
                parseFloat(styles['marginBottom']);
 
-  return Math.ceil(el.offsetHeight + margin);
+  return Math.ceil(menuElement.offsetHeight + margin);
 }
 
 startScrollDetection();

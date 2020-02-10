@@ -6,8 +6,11 @@ layout: default
 
     <div class="col-md-12 main content-panel">
         <div class="gravatar">
-            <img src="/assets/img/site/profile.jpg" class="rounded-circle about-image" height="150" width="150"
-                alt="{{ site.title }}" />
+            <img src="/assets/img/site/profile.jpg" 
+                 class="rounded-circle about-image" 
+                 height="150" 
+                 width="150"
+                 alt="{{ site.title }}" />
         </div>
 
         <h1>{{ site.title }}</h1>
@@ -25,20 +28,28 @@ layout: default
             <ul>
                 {% for post in site.posts limit: site.post_limit %}
                 <li>
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
+                    </a>
+                    <small class="hidden-xs">
+                        {{ post.date | date: "%B %-d, %Y" }}
+                    </small>
                 </li>
                 {% endfor %}
 
                 {% if site.posts.size > site.post_limit %}
                 <li>
-                    <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
+                    <small>
+                        <i>
+                            <a href="{{ site.baseurl }}/posts/">more...</a>
+                        </i>
+                    </small>
                 </li>
                 {% endif %}
             </ul>
         </div>
     </div>
-{% if site.search_enabled %}
+
     <div class="col-md-12 main content-panel">
         <div class="articles all-posts">
             <label for="search-input">
@@ -52,5 +63,4 @@ layout: default
             </ul>
         </div>
     </div>
-{% endif %}
 </div>
