@@ -14,4 +14,4 @@ function activateSearchInput() {
     }
 }
 
-$(document).ready(activateSearchInput);
+activateSearchInput();
