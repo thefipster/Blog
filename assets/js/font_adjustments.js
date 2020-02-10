@@ -35,7 +35,6 @@ function setFontSize() {
       var firstLink = document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0];
       var fontSize = getComputedStyle(firstLink).fontSize;
       startingFontSize = parseInt(fontSize);
-      setFontSize();
       window.addEventListener('resize', setFontSize);
     } catch (e) { }
   }
