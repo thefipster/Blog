@@ -1,6 +1,6 @@
 # Site settings
-title: the Fipster
-title_addon: Developerish blog of Felix Reisch
+title: Felix Reisch
+title_addon: Card of the Felix Reisch
 
 tagline: >
   Hi. I'm Felix a professional and passionate software engineer 
@@ -8,8 +8,6 @@ tagline: >
   My main objectives are writing SOLID software using mostly C#.
   Beside that I also enjoy writing some Typescript, Ruby, Python, Elixir or Prolog. 
   Let's be honest, in the end it all boils down to allocations, conditions and loops.
-  In my spare time I like to play around with everything that contains 
-  the letters IoT and needs some soldering.
 
 description: >
   Hi. I'm Felix a professional and passionate software engineer 
